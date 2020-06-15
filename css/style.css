@@ -1,0 +1,312 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url(../image/w1.jfif);
+    background-size: cover;
+    /*align-content: center;*/
+    /*justify-content: center;*/
+     display: flex; 
+}
+#phone{
+position: relative;
+width: 270px;
+height: 480px;
+background: #020c17;
+margin: 100px;
+/* display: none; */
+
+}
+
+#bottom{
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+#bottom:before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #aaa;
+    cursor: pointer;
+    border-radius: 6px;
+    /* transform: translate(-50%, -50%); */
+}
+#top{
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+#top:before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 7px;
+    height: 2px;
+    border: 1px solid #ccc;
+    background-color: #aaa;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px solid #000;
+
+}
+#top:after{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 40px;
+    height: 3px;
+    border: 1px solid #ccc;
+    background-color: #aaa;
+    border-radius: 2px;
+}
+#start{
+    position: absolute;
+    color: #fff;
+    margin-left: 70px;
+    margin-top: 200px;
+    animation-name: johnson;
+    display: none;
+    animation-duration: 10s;
+    font-size: 30px;
+}
+#middle{
+    position: absolute;
+    color:#fff;
+    width: 100%;
+    bottom:1%;
+    margin-left: -20px;
+    display: none;
+
+}
+#middle ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+ul li:hover .fa{
+	transform: translateY(10px);
+    transition: 0.5s;
+}
+
+@keyframes johnson{
+5%{color:red};
+30%{color:yellow};
+50%{color:white};
+100%{color:blue};
+}
+
+#screen1{
+	position: absolute;
+	top: 30%;
+	left: 5%;
+	width: 100%;
+	/* display: none; */
+}
+#screen1 button{
+	width: 20%;
+	margin: 10px;
+	padding: 10px;
+	background: #999;
+	color: #fff;
+	border-radius: 20px;
+	border:none;
+	outline: none;
+}
+#mydiv{
+	position: absolute;
+	top: 5%;
+	width: 100%;
+	line-height: normal;
+	border: none;
+	color: red;
+	font-size: 30px;
+	font-weight: 40px;
+    overflow: hidden;
+    /* background-color: aliceblue; */
+    display: none;
+    word-break: break-all;
+}
+#calling{
+    position: absolute;
+    top:30%;
+    width: 100%;
+    background: #fff;
+    /* margin-top: 100px; */
+
+}
+/* =================
+second phone
+================= */
+#mobile{
+position: relative;
+width: 270px;
+height: 480px;
+background: #c8ced6;
+margin: 100px;
+display: none;
+}
+#up{
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+#up:before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 7px;
+    height: 2px;
+    border: 1px solid #ccc;
+    background-color: #aaa;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px solid #000;
+
+}
+#up:after{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 40px;
+    height: 3px;
+    border: 1px solid #ccc;
+    background-color: #aaa;
+    border-radius: 2px;
+}
+
+#down{
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+#down:before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #aaa;
+    cursor: pointer;
+    border-radius: 6px;
+    /* transform: translate(-50%, -50%); */
+}
+
+
+#m:hover{
+                width: 100%;
+                color: white;
+                background: blue;
+                cursor: pointer;
+                padding: 8px;
+            }
+ #a:hover{
+                width: 100%;
+                color: white;
+                background: blue;
+                cursor: pointer;
+                padding: 5px;
+
+
+            }
+ #g:hover{
+                width: 100%;
+                color: white;
+                background: blue;
+                cursor: pointer;
+                padding: 9px;
+
+
+            }
+ #e:hover{
+                width: 100%;
+                color: white;
+                background: blue;
+                cursor: pointer;
+                
+
+            }
+
+/*===================
+CARD
+===================*/
+
+.vine{
+    margin-left: 10px;
+    margin-top: 40px;
+    padding: 10px;
+    /*height: 600px;*/
+    background: #000;
+    color: #fff;
+    border:10px solid #fff;
+}
+#card{
+    padding: 30px;
+}
+
+#card button{
+    background: green;
+    color: white;
+    outline: none;
+    border:none;
+    padding: 10px;
+    width: 20em;
+}
+#card button:hover{
+    background: red;
+    color:white;
+
+}
+#card button:focus{
+    border: 2px solid white;
+    background: black;
+    color:white;
+    
+}
+#network{
+    width: 20em;
+    background: yellow;
+    outline: none;
+    border: none;
+
+}
+#amount{
+    width: 20em;
+    background: yellow;
+    outline: none;
+    border: none;
+
+
+}
+#input2{
+    width: 20em;
+    background: yellow;
+    outline: none;
+    border: none;
+
+}

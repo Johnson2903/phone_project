@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>phone</title>
+    <link rel="stylesheet" type="text/css" href="font/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+ <!-- ==========================
+card start here
+========================== -->
+
+<div class="vine" >
+        
+    <h5>you can recharge any network of your choice here</h5>
+    <div id="card">
+    <select id="network">
+        <option>choose Network</option>
+        <option value="mtn">MTN</option>
+        <option value="glo">GLO</option>
+        <option value="airtel">AIRTEL</option>
+        <option value="etisalat">ETISALAT</option>
+    </select><br><br>
+
+     <select id="amount" >
+        <option >choose Amount</option>
+        <option value="n1" >100</option>
+        <option value="n2">200</option>
+        <option value="n4">400</option>
+        <option value="n5">500</option>
+        <option value="n6">1000</option>
+    </select> <br> <br>
+    <input type="text" placeholder="how many card do yo want" id="input2"><br><br>
+    <button onclick="mytariff()">Generate</button>
+    <div id="myinput"></div><br>
+
+    </div>
+</div>
+     <!-- ==========================
+card end here
+========================== -->
+
+
+    <div id="all" style="display: flex">
+    <div id="phone">
+<div id="start">welcome....<br>
+<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> </div>
+</span>
+        <div id="middle">
+                <ul>
+                        <li id="cphone"><i class="fa fa-phone" aria-hidden="true"></i></li>
+                        <li id="com"><i class="fa fa-comment" aria-hidden="true"></i></li>
+                        <li id="cam"><i class="fa fa-camera" aria-hidden="true"></i></li>
+                        <li id="pic"><i class="fa fa-camera" aria-hidden="true"></i></li>
+                       <!-- <li> <i class="fa fa-refresh fa-spin"aria-hidden="true"></i></li>			 -->
+           
+                    </ul>
+                        
+                    
+
+        </div>
+        <div id="mainbalance" style="background: black; color: white; width: 60%; margin-left: 40px; margin-top: 200px; display: none">
+            <b>your MTN main balance is N<span id="account">200</span>, Data Bundles:0mb </b>
+
+            
+        </div>
+        <div id="bnet" style="width: 100%; background: white; color: green; display: none;">
+        <span><img src="image/g.png" width="80px"><img src="image/Full Battery.png" width="13px" height="15px;" style="margin-left: 170px"></span>
+
+    </div>
+        <div id="timming" style="display: none; margin-top: 200px; margin-left: 70px"><span id="date" style="color: #fff"></span><br>
+        <span id="time" style="color: #fff"></span>
+        </div>
+        <div id="bottom"></div>
+        <div id="top"></div>
+        <div id="screen1" style="display:none">
+				<button onclick="functioninput(event)">1</button>
+				<button onclick="functioninput(event)">2</button>
+				<button onclick="functioninput(event)">3</button><br>
+				<button onclick="functioninput(event)">4</button>
+				<button onclick="functioninput(event)">5</button>
+				<button onclick="functioninput(event)">6</button><br>
+				<button onclick="functioninput(event)">7</button>
+				<button onclick="functioninput(event)">8</button>
+				<button onclick="functioninput(event)">9</button><br>
+				<button onclick="functioninput(event)">*</button>
+				<button onclick="functioninput(event)">0</button>
+                <button onclick="functioninput(event)">#</button><br>
+            <span class="cphone" style="color: green; margin-left: 100px; font-size: 40px;"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <button onclick="mydel()" style="color: red">Del</button>
+
+                </div>
+            <div id="mydiv"></div>
+            <div id="calling" style="display: none">
+                <span id="man"></span><br>
+                <span id="call" ></span> <br> 
+            <div id="tari" style="display: none"><span id="hours">00</span>:<span id="min">00</span>: <span id="seconds">00</span></div><br>
+        <span class="cut" style="color: green; margin-left: 100px; font-size: 40px;"><i class="fa fa-phone" aria-hidden="true"></i> ....</span><br>
+             <span class="ut" style="color: red; margin-left: 100px; font-size: 40px; display: none"><i class="fa fa-phone" aria-hidden="true"></i> ....</span>
+
+
+        </div>
+        <div  id="mage" style="background: white; width: 20%; border: 2px solid black; margin-left: 100px; margin-top: 200px; display: none">
+        
+            
+                <span id="m">MTN</span><br>
+                <span id="a">Airtel</span><br>
+                <span id="g">Glo</span><br>
+                <span id="e">Etisalat</span><br>
+             
+
+        </div>
+        </div>
+
+
+
+<!-- =====================
+second phone
+==================== -->
+<div id="mobile">
+   <div id="incoming" style="background: greenyellow; widows: 100%; margin-top: 200px; display: none">
+    <em>incoming call....</em><br><br>
+    <span id="num" style="font-size: 30px"></span><br><br>
+    <i class="fa fa-phone receive"  style="color: rgb(5, 161, 102); font-size: 40px;"></i>
+    <i class="fa fa-phone reject" style="color: rgb(161, 5, 5); font-size: 40px; margin-left: 90px"></i>
+
+</div>
+<div id="up"></div>
+<div id="down"></div>
+</div>
+</div>
+</div>
+
+
+
+
+<script src="jquery/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

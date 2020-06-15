@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>card</title>
+</head>
+<style type="text/css">
+  
+body{
+  background: red;
+}
+
+</style>
+<body>
+
+    <div class="">
+		<h1>welcome to Johnson smart phone international</h1><br>
+	<h5>you can recharge any network of choice here</h5>
+	<div id="card">
+	<select id="network">
+		<option>choose Network</option>
+		<option value="mtn">MTN</option>
+		<option value="glo">GLO</option>
+		<option value="airtel">AIRTEL</option>
+		<option value="etisalat">ETISALAT</option>
+	</select><br>
+
+     <select id="amount" >
+		<option >choose Amount</option>
+		<option value="n1" >100</option>
+		<option value="n2">200</option>
+		<option value="n4">400</option>
+		<option value="n5">500</option>
+		<option value="n6">1000</option>
+	</select>	<br>
+	<input type="text" placeholder="how many card do yo wnat" id="input2">
+	<div id="myinput"></div><br>
+	<button onclick="mytariff()">generate</button>
+    </div>
+    <button><a href="index.html">GO BACK</a> </button>
+    
+    <script>
+    let mytariff=()=>{
+if (network.value=="mtn" ) {
+var hid="";
+	var me=input2.value;
+	var a = Math.random()
+       while(a<me){
+     hid+="<br>"  + Math.floor(a *2100000000000000);
+     a++;
+       }
+       myinput.innerHTML=hid;
+
+    
+
+   if (amount.value=="n1") {
+           alert("you just buy " + input2.value + " #100 MTN" );
+       }
+       else if (amount.value=="n2") {
+           alert("you just buy " + input2.value + " #200 MTN")
+       }
+       else if (amount.value=="n4") {
+           alert("you just buy " + input2.value + " #400 MTN")
+       }
+       else if (amount.value=="n5") {
+           alert("you just buy " + input2.value +  " #500 MTN")
+       }
+       else if (amount.value=="n6") {
+           alert("you just buy " + input2.value + " #1000 MTN")
+       }
+       else {
+           alert("choose the amount you want to buy ")
+           myinput.innerHTML="";
+       }
+      
+}
+ else if(network.value=="airtel") {
+//     let a = Math.random()
+//        let b =Math.floor(a *2100000000000000)
+//    myinput.innerHTML=b;
+var hid="";
+	var me=input2.value;
+	var a = Math.random()
+       while(a<me){
+     hid+="<br>"  + Math.floor(a *2100000000000000);
+     a++;
+       }
+       myinput.innerHTML=hid;
+
+    if (amount.value=="n1") {
+           alert("you just buy "  + input2.value + " #100 Airtel Card");
+       }
+       else if (amount.value=="n2") {
+           alert("you just buy "  + input2.value + " #200 Airtel Card")
+       }
+       else if (amount.value=="n4") {
+           alert("you just buy "  + input2.value + " #400 Airtel Card")
+       }
+       else if (amount.value=="n5") {
+           alert("you just buy "  + input2.value + " #500 Airtel Card")
+       }
+       else if (amount.value=="n6") {
+           alert("you just buy "  + input2.value + " #1000 Airtel Card")
+       }
+       else {
+           alert("choose the amount you want to buy ")
+           myinput.innerHTML="";
+       }
+
+  
+}
+else if (network.value=="glo") {
+//   let a = Math.random()
+//        let b =Math.floor(a *2210000000000000)
+//    myinput.innerHTML=b;
+var hid="";
+	var me=input2.value;
+	var a = Math.random()
+       while(a<me){
+     hid+="<br>"  + Math.floor(a *2210000000000000);
+     a++;
+       }
+       myinput.innerHTML=hid;
+
+
+    if (amount.value=="n1") {
+           alert("you just buy "  + input2.value + " #100 Glo Card");
+       }
+       else if (amount.value=="n2") {
+           alert("you just buy "  + input2.value + " #200 Glo Card")
+       }
+       else if (amount.value=="n4") {
+           alert("you just buy "  + input2.value + " #400 Glo Card")
+       }
+       else if (amount.value=="n5") {
+           alert("you just buy "  + input2.value + " #500 Glo Card")
+       }
+       else if (amount.value=="n6") {
+           alert("you just buy "  + input2.value + " #1000 Glo Card")
+       }
+       else {
+           alert("choose the amount you want to buy ")
+           myinput.innerHTML="";
+       }
+   
+
+
+}
+  else if (network.value=="etisalat") {
+//     let a = Math.random()
+//        let b =Math.floor(a *2210000000000000)
+//    myinput.innerHTML=b;s
+var hid="";
+	var me=input2.value;
+	var a = Math.random()
+       while(a<me){
+     hid+="<br>"+ Math.floor(a *2210000000000000);
+     a++;
+       }
+       myinput.innerHTML=hid;
+   if (amount.value=="n1") {
+           alert("you just buy "  + input2.value + " #100 Etisalat Card");
+       }
+       else if (amount.value=="n2") {
+           alert("you just buy "  + input2.value + " #200 Etisalat Card")
+       }
+       else if (amount.value=="n4") {
+           alert("you just buy "  + input2.value + " #400 Etisalat Card")
+       }
+       else if (amount.value=="n5") {
+           alert("you just buy "  + input2.value + " #500 Etisalat Card")
+       }
+       else if (amount.value=="n6") {
+           alert("you just buy "  + input2.value + " #1000 Etisalat Card")
+       }
+       else {
+           alert("choose the amount you want to buy ")
+           myinput.innerHTML="";
+       }
+}
+
+else{
+    alert("choose your network");
+}
+}
+    
+    
+    
+    </script>
+</body>
+</html>
+
+
+
+
